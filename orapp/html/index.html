@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="renderer" content="webkit">
+  <meta charset="utf-8">
+  <title>手术室管理系统</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style type="text/css">
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #49a9ee;
+      transition: opacity .65s
+    }
+
+    .preloader-hidden-add {
+      display: block;
+      opacity: 1
+    }
+
+    .preloader-hidden-add-active {
+      opacity: 0
+    }
+
+    .preloader-hidden {
+      display: none
+    }
+
+    .cs-loader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%
+    }
+
+    .cs-loader-inner {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      transform: translateY(-50%)
+    }
+
+    .cs-loader-inner label {
+      display: inline-block;
+      font-size: 20px;
+      opacity: 0
+    }
+
+    @keyframes lol {
+      0% {
+        transform: translateX(-300px);
+        opacity: 0
+      }
+
+      33% {
+        transform: translateX(0);
+        opacity: 1
+      }
+
+      66% {
+        transform: translateX(0);
+        opacity: 1
+      }
+
+      100% {
+        transform: translateX(300px);
+        opacity: 0
+      }
+    }
+
+    .cs-loader-inner label:nth-child(6) {
+      animation: lol 3s infinite ease-in-out
+    }
+
+    .cs-loader-inner label:nth-child(5) {
+      animation: lol 3s .1s infinite ease-in-out
+    }
+
+    .cs-loader-inner label:nth-child(4) {
+      animation: lol 3s .2s infinite ease-in-out
+    }
+
+    .cs-loader-inner label:nth-child(3) {
+      animation: lol 3s .3s infinite ease-in-out
+    }
+
+    .cs-loader-inner label:nth-child(2) {
+      animation: lol 3s .4s infinite ease-in-out
+    }
+
+    .cs-loader-inner label:nth-child(1) {
+      animation: lol 3s .5s infinite ease-in-out
+    }
+
+  </style>
+  <script>
+    function isEdge() {
+      return navigator.userAgent.indexOf("Edge") > -1;
+    }
+
+    function isIE() {
+      if (!!window.ActiveXObject || "ActiveXObject" in window)
+        return true;
+      else
+        return false;
+    }
+    window.onload = function () {
+      if (isEdge()) {
+        alert('您使用的Edge版本过低，请升级最新版！');
+        window.location = "https://www.microsoft.com/zh-cn/edge";
+      } else if (isIE()) {
+        alert('360/QQ浏览器请切换为极速模式\r\nIE浏览器推荐使用谷歌浏览器访问本网站！');
+        window.location = "https://www.google.cn/intl/zh-CN/chrome/";
+      }
+    }
+
+  </script>
+<link rel="stylesheet" href="styles.f6cb22d24ca09f02938f.css"></head>
+
+<body>
+  <app-root></app-root>
+  <div class="preloader">
+    <div class="cs-loader">
+      <div class="cs-loader-inner"><label> ●</label><label> ●</label><label> ●</label><label> ●</label><label>
+          ●</label><label> ●</label></div>
+    </div>
+<script src="runtime-es2015.004f25a97e65e875cf93.js" type="module"></script><script src="runtime-es5.004f25a97e65e875cf93.js" nomodule defer></script><script src="polyfills-es5.10284d88573797bc59a3.js" nomodule defer></script><script src="polyfills-es2015.fc31fbfb93a5b5ce666e.js" type="module"></script><script src="scripts.79bd88c86bd7093d6548.js" defer></script><script src="main-es2015.be99c753f865f81ed482.js" type="module"></script><script src="main-es5.be99c753f865f81ed482.js" nomodule defer></script></body>
+
+</html>

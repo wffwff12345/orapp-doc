@@ -1,0 +1,126 @@
+{
+  "app": {
+    "name": "手术室管理系统",
+    "description": "手术室管理系统"
+  },
+  "menu": [
+    {
+      "text": "",
+      "i18n": "menu.main",
+      "group": false,
+      "hideInBreadcrumb": true,
+      "children": [
+        {
+          "text": "仪表盘",
+          "acl": "menu-dashboard",
+          "icon": "anticon-dashboard"
+        },
+        {
+          "text": "Web数据同步",
+          "icon": "anticon-database",
+          "children": [
+            {
+              "text": "手术室一览",
+              "link": "/operation/operation-room"
+            },
+            {
+              "text": "打卡记录一览",
+              "link": "/operation/sign"
+            },
+            {
+              "text": "排班信息一览",
+              "link": "/operation/schedule"
+            },
+            {
+              "text":"医护人员一览",
+              "link":"/operation/medical-personnel"
+            },
+            {
+              "text":"病人信息一览",
+              "link":"/operation/patient"
+            }
+
+          ]
+        },
+        {
+          "text": "App版本管理",
+          "icon": "anticon-setting",
+          "acl": "menu-version",
+          "children": [
+            {
+              "text": "App版本管理",
+              "acl": "version-edit",
+              "link": "/version/version"
+            }
+          ]
+        },
+        {
+          "text":"设备",
+          "icon":"anticon-control",
+          "children":[
+            {
+              "text":"设备管理",
+              "link":"/device/manage"
+            },
+            {
+              "text":"图片上传",
+              "link":"/device/picture"
+            },
+            {
+              "text":"外来人员管理",
+              "link":"/device/migrants"
+            },
+            {
+              "text":"审核管理",
+              "link":"/device/migrants-verify"
+            }
+          ]
+
+        },
+        {
+          "text":"系统监控",
+          "icon":"anticon-monitor",
+          "acl": "menu-monitor",
+          "children":[
+            {
+              "text":"定时任务",
+              "link":"/monitor/quartz"
+            }
+          ]
+        },
+        {
+          "text": "系统管理",
+          "icon": "anticon-setting",
+          "acl": "menu-system",
+          "children": [
+            {
+              "text": "权限管理",
+              "acl": "roles",
+              "link": "/system/role"
+            },
+            {
+              "text": "用户管理",
+              "acl": "users",
+              "link": "/system/user"
+            },
+            {
+              "text": "系统配置",
+              "acl": "configs",
+              "link": "/system/config"
+            },
+            {
+              "text": "日志管理",
+              "acl": "logs",
+              "link": "/system/logs"
+            },
+            {
+              "text": "字典管理",
+              "acl": "dicts",
+              "link": "/system/dicts"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
